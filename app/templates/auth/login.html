@@ -11,8 +11,8 @@
                 </div>
                 {% endfor %}
                 <!-- Login form -->
-                {{wtf.quick_form(login_form)}}
-                <p style="font-size:14px"> Dont have an account yet? <a href="{{url_for('auth.register')}}"
+                {{wtf.quick_form(form)}}
+                <p style="font-size:14px"> Dont have an account yet? <a href="{{url_for('auth.signup')}}"
                         class="btn btn-info">Sign up
                         here</a></p>
             </div>
