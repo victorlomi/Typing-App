@@ -1,7 +1,6 @@
 {% extends 'bootstrap/base.html'%}
 
 <!-- Navbar block  -->
-{% block navbar %} {% include 'navbar.html' %} {% endblock %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +10,7 @@
 </head>
 <body>
     <!-- navigation(add here for all pages)-->
+    {% block navbar %} {% include 'navbar.html' %} {% endblock %}
     {% block content %}{% endblock %} 
 </body>
 </html>
