@@ -5,6 +5,11 @@ from flask_bootstrap import Bootstrap
 
 bootstrap = Bootstrap()
 
+from flask_login import LoginManager
+
+login = LoginManager()
+
+
 def create_app(config_class=Config):
     app = Flask(__name__)
     app.config.from_object(config_class)
@@ -12,6 +17,8 @@ def create_app(config_class=Config):
     # Initializing Flask Extensions
     bootstrap.init_app(app)
     
+    login.init_app(app)
+
     from app.main import bp as main_bp
     app.register_blueprint(main_bp)
 
