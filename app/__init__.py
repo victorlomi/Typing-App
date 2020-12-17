@@ -2,8 +2,13 @@ from flask import Flask
 from config import Config
 from flask_bootstrap import Bootstrap
 
+from flask_login import LoginManager
+
 
 bootstrap = Bootstrap()
+login = LoginManager()
+
+
 
 def create_app(config_class=Config):
     app = Flask(__name__)
