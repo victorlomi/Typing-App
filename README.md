@@ -1,4 +1,4 @@
-# News Catchup
+# Typing App
 A web app that helps people improve their typing speed by practicing typing their favorite texts. The app also gamifies typing by making it a competition against others through the use of a leaderboard. 
 
 **Live Link: https://typing-app-flask.herokuapp.com/**
